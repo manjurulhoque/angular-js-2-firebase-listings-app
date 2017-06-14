@@ -1,0 +1,9 @@
+<div class="jumbotron text-center">
+  <div class="container" *ngIf="!isLoggedIn">
+    <h1>Property Listings</h1>
+    <a href="" (click)="login()"><img src="assets/img/google.png" alt=""></a>
+  </div>
+  <div class="container" *ngIf="(fs.af.auth | async)">
+    <h1>You are logged in</h1>
+  </div>
+</div>
